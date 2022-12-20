@@ -74,6 +74,15 @@ function actualizarDisplay(){
     result.value = opeActual;
 }
 
+var foo = document.getElementById("clic-hover");
+foo.addEventListener('click', function(){
+    foo.setAttribute("style", "background: green; box-shadow: 0 0 10px green, 0 0 100px green; border-color: green");
+})
+foo.addEventListener('mouseleave',function(){
+foo.setAttribute("style", "background: rgba(255, 255, 255, .9)");
+})
+
+
 function clear(){
     opeActual = '';
     opeAnterior = '';
